@@ -20,8 +20,8 @@ export const Task = ({ task }) => {
       <input
         type="checkbox"
         className={css.checkbox}
-        onChange={handleToggle}
         checked={task.completed}
+        onChange={handleToggle}
       />
       <p className={css.text}>{task.text}</p>
       <button className={css.btn} type="button" onClick={handleDelete}>
